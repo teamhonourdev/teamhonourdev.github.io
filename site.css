@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+	font-family: "Space Grotesk", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	user-select: none;
+	color: #e7e7e7;
+	background: url(./static/bc_one.png) center center/cover no-repeat;
+	background-color: #18181850;
+	background-blend-mode: multiply;
+	padding: 100px;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 2px solid #333;
+}
+
+.header .logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .logo img {
+	width: 30%;
+	height: 30%;
+}
+
+.header .description {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 25px;
+	font-wieght: italic;
+	font-optical-sizing: auto;
+}
+
+.secondary-header {
+	padding-top: 5px;
+	background: url(./static/rb_one.png) center center/cover no-repeat;
+	background-color: rgba(18, 18, 18, 0.90);
+	background-blend-mode: multiply;
+	font-size: 22px;
+	color: white;
+	padding-bottom: 5px;
+}
+
+.secondary-header .head {
+	font-size: 30px;
+	border-bottom: 2px solid #ddd;
+}
+
+.secondary-header .description {
+	width: 50%;
+	margin: 10px auto auto auto;
+	font-size: 25px;
+}
+
+.member {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	background: #11111170;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.member img {
+	border: 1px solid #ddd;
+	border-radius: 14px;
+}
+
+.member a, .member a:visited, .member-small a, .member-small a:visited  {
+	color: #ccc;
+}
+
+.member a:hover, .member-small a:hover {
+	text-decoration: none;
+}
+
+.member-small {
+	background: #11111170;
+	border-radius: 10px;
+	padding: 3px;
+	margin: 3px;
+}
+
+.footer {
+	text-align: center;
+	background: #121212;
+	color: #bbb;
+	padding: 20px;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.header .logo img {
+		width: 60%;
+		height: 60%;
+	}
+
+	.for-small-screens {
+		display: inherit;
+	}
+
+	.for-big-screens {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.for-big-screens {
+		display: inherit;
+	}
+
+	.for-small-screens {
+		display: none;
+	}
+}
